@@ -1,0 +1,38 @@
+/***********************共通設定************************/
+
+
+//break point
+$w_sp: 750px;
+$w_sml: 900px;
+$w_mid: 1300px;
+
+
+@mixin mediaSP {  /* 750以下  */
+  @media all and (max-width: $w_sp) {@content;}
+}
+@mixin mediaPC {  /* 751以上 */
+  @media all and (min-width: $w_sp + 1) {@content;}
+}
+
+@mixin mediaSMLmax {  /* 900以下  */
+  @media all and (max-width: $w_sml) {@content;}
+}
+
+@mixin mediaSMLmin {  /* 901以上  */
+  @media all and (min-width: $w_sml + 1) {@content;}
+}
+
+
+@mixin mediaMIDmax {  /* 1300以下  */
+  @media all and (max-width: $w_mid) {@content;}
+}
+
+@mixin mediaMIDmin {  /* 1301以上  */
+  @media all and (min-width: $w_mid + 1) {@content;}
+}
+
+
+@mixin trans {  transition: all .3s;}
+@mixin trans1 {  transition: all .5s;}
+@mixin trans2 {  transition: all .7s;}
+@mixin trans3 {  transition: all 1.0s;}

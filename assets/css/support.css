@@ -1,0 +1,369 @@
+@charset "UTF-8";
+/***********************共通設定************************/
+.flow_price_tit.green {
+  color: #fff;
+  background: #01807D;
+}
+
+.flow_price_detail.green {
+  color: #fff;
+  background: #006564;
+}
+
+.simulate {
+  border: solid 1px #AAAAAA;
+  padding: 20px;
+  margin: 40px 0;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .simulate {
+    padding: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.simulate_tit {
+  /* 901以上  */
+  /* 900以下  */
+}
+@media all and (min-width: 901px) {
+  .simulate_tit {
+    width: 30%;
+  }
+}
+@media all and (max-width: 900px) {
+  .simulate_tit {
+    margin: 0 0 20px;
+  }
+}
+
+.simulate_text {
+  font-size: 14px;
+  position: relative;
+  /* 901以上  */
+  /* 900以下  */
+}
+@media all and (min-width: 901px) {
+  .simulate_text {
+    width: 70%;
+  }
+}
+@media all and (max-width: 900px) {
+  .simulate_text {
+    padding: 0 0 0 30px;
+  }
+}
+.simulate_text::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: #006564;
+  top: 50%;
+  left: 0px;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .simulate_text::before {
+    left: -30px;
+  }
+}
+
+.simulate_icon li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 0 40px;
+}
+
+.icon_image {
+  width: 8%;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .icon_image {
+    width: 15%;
+  }
+}
+
+.icon_text {
+  width: 89%;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .icon_text {
+    width: 80%;
+  }
+}
+.icon_text li {
+  font-size: 14px;
+}
+
+.icon_detail {
+  font-size: 14px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .icon_detail {
+    font-size: 13px;
+  }
+}
+
+.flow_tit span {
+  font-family: "Montserrat", sans-serif, "Noto Sans Japanese", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", YuGothic, "游ゴシック", Noto Sans JP, "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック";
+  font-weight: bold;
+  margin: 0 30px 0 0;
+  position: relative;
+}
+.flow_tit span::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background: #000;
+  top: 49%;
+  left: 30px;
+}
+
+.guidance {
+  background: #F6F5F2;
+  padding: 10px;
+  border: solid 1px #AAAAAA;
+  margin: 60px 0;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .guidance {
+    padding: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.guidance_text {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .guidance_text {
+    width: 50%;
+  }
+}
+.guidance_text li {
+  font-size: 14px;
+  padding: 0 0 0 50px;
+  margin: 20px 0;
+  position: relative;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .guidance_text li {
+    font-size: 13px;
+    padding: 0 0 0 20px;
+  }
+}
+.guidance_text li::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: #006564;
+  left: 20px;
+  top: 11px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .guidance_text li::before {
+    left: 5px;
+  }
+}
+
+.guidance_tit {
+  font-size: 20px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .guidance_tit {
+    font-size: 16px;
+  }
+}
+
+.guidance_image {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .guidance_image {
+    width: 40%;
+  }
+}
+
+.guidance_master {
+  background: -o-linear-gradient(273deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+  background: linear-gradient(177deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+  padding: 40px;
+  color: #fff;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .guidance_master {
+    padding: 20px;
+  }
+}
+
+.master_list ul {
+  margin: 20px 0;
+}
+.master_list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: solid 1px;
+  border-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 0;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .master_list li {
+    padding: 5px 0;
+  }
+}
+
+.master_tit {
+  font-size: 19px;
+}
+
+.master_num {
+  font-size: 44px;
+  font-weight: bold;
+  opacity: 0.5;
+  margin: 0 20px 0 0;
+  width: 5%;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .master_num {
+    font-size: 34px;
+  }
+}
+
+.master_text {
+  width: 90%;
+  font-size: 14px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .master_text {
+    font-size: 13px;
+  }
+}
+
+.analyze {
+  border: solid 1px #AAAAAA;
+  padding: 30px;
+  margin: 40px 0;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .analyze {
+    padding: 20px;
+  }
+}
+
+.analyze_tit_wrap {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .analyze_tit_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.analyze_tit_sub {
+  padding: 0 0 0 40px;
+  position: relative;
+  /* 900以下  */
+}
+.analyze_tit_sub::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 1px;
+  background: #006564;
+  top: 48%;
+  left: 15px;
+}
+@media all and (max-width: 900px) {
+  .analyze_tit_sub {
+    font-size: 12px;
+    padding: 0 0 0 5px;
+  }
+}
+
+.analyze_text {
+  margin: 20px 0 0;
+}
+
+.sheat_wrap ul {
+  margin: 0 0 20px;
+}
+.sheat_wrap li {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0 10px;
+}
+.sheat_wrap span {
+  font-weight: bold;
+  color: #006564;
+  margin: 0 20px;
+  position: relative;
+}
+.sheat_wrap span::before {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 1px;
+  background: #006564;
+  top: 12px;
+  left: -17px;
+}
+
+.sheat_image {
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .sheat_image {
+    overflow: scroll;
+  }
+  .sheat_image img {
+    width: 680px;
+  }
+}
+/*# sourceMappingURL=support.css.map */

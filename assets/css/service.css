@@ -1,0 +1,235 @@
+@charset "UTF-8";
+/***********************共通設定************************/
+.service_catch_wrap {
+  background: #F6F5F2;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.service_catch {
+  margin: 0 auto;
+  padding: 60px 40px;
+  /* 901以上  */
+  /* 900以下  */
+}
+@media all and (min-width: 901px) {
+  .service_catch {
+    max-width: 1080px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+@media all and (max-width: 900px) {
+  .service_catch {
+    padding: 20px;
+  }
+}
+
+.service_tit {
+  text-align: left;
+  position: relative;
+  color: #FFFFFF;
+  background: #006564;
+  padding: 15px 20px;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .service_tit {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+
+.service_text {
+  text-align: left;
+  position: relative;
+  /* 901以上  */
+  /* 900以下  */
+}
+@media all and (min-width: 901px) {
+  .service_text {
+    width: 75%;
+  }
+}
+@media all and (max-width: 900px) {
+  .service_text {
+    margin: 30px 0 0;
+  }
+}
+
+.service_flow {
+  text-align: left;
+  margin: 60px 0;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .service_flow {
+    margin: 40px 0 0;
+  }
+}
+
+.flow_tit {
+  font-size: 19px;
+  position: relative;
+  display: inline;
+  padding-bottom: 3px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, transparent), color-stop(0%, #f4f49d));
+  background: -o-linear-gradient(transparent 75%, #f4f49d 0%);
+  background: linear-gradient(transparent 75%, #f4f49d 0%);
+}
+
+.flow_text {
+  font-size: 14px;
+  padding: 10px 0 20px;
+}
+.flow_text_flex {
+  padding: 20px 0;
+  border-top: 1px solid #E8E7E1;
+  display: block;
+  font-size: 14px;
+  /* 751以上 */
+}
+@media all and (min-width: 751px) {
+  .flow_text_flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.flow_text_flex span {
+  background: #E8E7E1;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 5px 8px;
+  margin: 0 auto 1em 0;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  white-space: nowrap;
+  display: inline-block;
+  /* 751以上 */
+}
+@media all and (min-width: 751px) {
+  .flow_text_flex span {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: auto 2em auto 0;
+  }
+}
+.flow_text_flex span p {
+  color: #000000;
+  display: inline-block;
+}
+
+.flow_price {
+  font-size: 14px;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_price {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.flow_price_tit, .flow_price_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* 901以上  */
+  /* 900以下  */
+}
+@media all and (min-width: 901px) {
+  .flow_price_tit, .flow_price_detail {
+    height: 80px;
+  }
+}
+@media all and (max-width: 900px) {
+  .flow_price_tit, .flow_price_detail {
+    padding: 10px;
+  }
+}
+
+.flow_price_tit {
+  background: #E8E7E1;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_price_tit {
+    width: 15%;
+  }
+}
+
+.flow_price_detail {
+  background: #F6F5F2;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_price_detail {
+    width: 35%;
+  }
+}
+.flow_price_detail span {
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.flow_price_sub {
+  margin: 20px 0 0 20px;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_price_sub {
+    width: 50%;
+    margin: 0 0 0 60px;
+  }
+}
+.flow_price_sub li {
+  position: relative;
+}
+.flow_price_sub li::after {
+  content: "";
+  position: absolute;
+  background: #006564;
+  width: 5px;
+  height: 1px;
+  top: 50%;
+  left: -15px;
+}
+
+.icon_tit.line {
+  position: relative;
+  display: inline;
+  padding-bottom: 4px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(90%, transparent), color-stop(0%, #93C899));
+  background: -o-linear-gradient(transparent 90%, #93C899 0%);
+  background: linear-gradient(transparent 90%, #93C899 0%);
+}
+
+.guidance_tit span {
+  font-size: 14px;
+  text-indent: 1em;
+  display: inline-block;
+}

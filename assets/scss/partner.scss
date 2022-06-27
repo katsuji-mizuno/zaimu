@@ -1,0 +1,155 @@
+@charset 'utf-8';
+@import 'mixin';
+
+
+#main {
+    padding: 80px 40px 0;
+}
+
+
+
+.service_text {
+    @include mediaSMLmin{
+        width: 70%;
+    }
+
+}
+
+
+
+
+.partner_list_w {
+    background: #fff;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.partner_list_g {
+    background: #FAFAFA;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.partner_info {
+    margin: 0 auto;
+    padding: 20px;
+    @include mediaSMLmin{
+        padding: 40px;
+        max-width: 1080px;
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+    }
+}
+
+
+.partner_photo {
+    width: 20%;
+    @include mediaSMLmax{
+        display: none;
+    }
+}
+
+
+.partner_text {
+    text-align: left;
+    @include mediaSMLmin{
+        width: 75%;
+    }
+}
+
+.partner_skill {
+    font-size: 14px;
+    color: #006564;
+    @include mediaSMLmax{
+        font-size: 13px;
+    }
+}
+
+.partner_name {
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    span{
+        color: #D8D7D1;
+        margin: 0 0 0 30px;
+        font-weight: bold;
+    }
+    @include mediaSMLmax{
+        font-size: 20px;
+        span{
+            margin: 0 0 0 10px;
+        }
+    }
+}
+
+.partner_job {
+    background: linear-gradient(177deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+    color: #fff;
+    padding: 0 0 0 30px;
+    position: relative;
+    margin: 10px 0 0;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 1px;
+        background: #fff;
+        top: 50%;
+        left: 15px;
+    }
+}
+
+.partner_message_wrap {
+    @include mediaSMLmax{
+        margin: 30px 0 0;
+    }
+}
+
+.partner_message {
+    font-size: 14px;
+    margin: 30px 0 0;
+    p{
+        margin: 0 0 10px 0;
+    }
+    ul{
+        margin: 15px 0;
+        &.num{
+            li{
+                list-style: auto;
+                margin: 0 0 0 25px;
+
+            }
+        }
+        &.list_text{
+            li{
+                list-style: square;
+                margin: 0 0 0 25px;
+                p{
+                    font-size: 13px;
+                    margin: 0;
+                    line-height: 1.5;
+                    &.list_tit{
+                        font-size: 14px;
+                        margin: 10px 0 5px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    @include mediaSMLmax{
+        margin: 0;
+        p{
+            margin: 0 0 5px 0;
+        }
+    }
+}
+
+.partner_photo_sp {
+    width: 50%;
+    margin: 0 auto 30px;
+    @include mediaSMLmin{
+        display: none;
+    }
+}

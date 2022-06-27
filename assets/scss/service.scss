@@ -1,0 +1,175 @@
+@charset 'utf-8';
+@import 'mixin';
+
+
+.service_catch_wrap {
+    background: #F6F5F2;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+}
+
+.service_catch {
+
+    margin: 0 auto;
+    padding: 60px 40px;
+    @include mediaSMLmin{
+        max-width: 1080px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    @include mediaSMLmax{
+        padding: 20px;
+    }
+}
+
+.service_tit {
+  text-align: left;
+  position: relative;
+  color: #FFFFFF;
+  background: #006564;
+  padding: 15px 20px;
+  @include mediaSMLmin{
+    width: fit-content;
+  }
+}
+
+.service_text {
+    text-align: left;
+    position: relative;
+    @include mediaSMLmin{
+        width: 75%;
+    }
+    @include mediaSMLmax{
+    margin: 30px 0 0;
+    }
+}
+
+
+
+.service_flow {
+    text-align: left;
+    margin: 60px 0;
+    @include mediaSMLmax{
+        margin: 40px 0 0;
+        }
+}
+
+.flow_tit {
+  font-size: 19px;
+  position: relative;
+  display: inline;
+  padding-bottom: 3px;
+  background: linear-gradient(transparent 75%, #f4f49d 0%);
+}
+
+.flow_text {
+  font-size: 14px;
+  padding: 10px 0 20px;
+  &_flex{
+    padding: 20px 0;
+    border-top: 1px solid #E8E7E1;
+    display: block;
+    font-size: 14px;
+    @include mediaPC{
+      display: flex;
+      justify-content: flex-start;
+    }
+    span{
+      background: #E8E7E1;
+      display: table-cell;
+      vertical-align: middle;
+      padding: 5px 8px;
+      margin: 0 auto 1em 0;
+      height: fit-content;
+      white-space: nowrap;
+      display: inline-block;
+      @include mediaPC{
+        width: fit-content;
+        margin: auto 2em auto 0;
+      }
+      p{
+        color: #000000;
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+
+
+.flow_price {
+    font-size: 14px;
+    @include mediaSMLmin{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.flow_price_tit ,.flow_price_detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include mediaSMLmin{
+        height: 80px;
+    }
+    @include mediaSMLmax{
+        padding: 10px;
+    }
+}
+.flow_price_tit {
+    background: #E8E7E1;
+    @include mediaSMLmin{
+      width: 15%;
+    }
+}
+
+.flow_price_detail {
+    background: #F6F5F2;
+    @include mediaSMLmin{
+        width: 35%;
+    }
+    span{
+        font-size: 20px;
+        margin: 0 10px;
+    }
+}
+
+.flow_price_sub {
+    margin: 20px 0 0 20px;
+    @include mediaSMLmin{
+        width: 50%;
+        margin: 0 0 0 60px;
+    }
+
+    li {
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            background: #006564;
+            width: 5px;
+            height: 1px;
+            top: 50%;
+            left: -15px;
+
+        }
+    }
+}
+
+.icon_tit{
+  &.line{
+    position: relative;
+    display: inline;
+    padding-bottom: 4px;
+    background: linear-gradient(transparent 90%, #93C899 0%);
+  }
+}
+.guidance_tit{
+  span{
+    font-size: 14px;
+    text-indent: 1em;
+    display: inline-block;
+  }
+}

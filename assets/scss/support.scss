@@ -1,0 +1,307 @@
+@charset 'utf-8';
+@import 'mixin';
+
+.flow_price_tit {
+    &.green{
+        color:#fff ;
+        background: #01807D;
+    }
+}
+
+.flow_price_detail {
+    &.green{
+        color:#fff ;
+        background: #006564 ;
+    }
+}
+
+.simulate {
+    border: solid 1px #AAAAAA;
+    padding: 20px;
+    margin: 40px 0;
+    @include mediaSMLmin{
+        padding: 30px;
+        display: flex;
+        align-items: center;
+
+    }
+}
+
+.simulate_tit {
+    @include mediaSMLmin{
+        width: 30%;
+    }
+    @include mediaSMLmax{
+        margin: 0 0 20px;
+    }
+}
+.simulate_text {
+    font-size: 14px;
+    position: relative;
+    @include mediaSMLmin{
+        width: 70%;
+    }
+    @include mediaSMLmax{
+        padding: 0 0 0 30px;
+    }
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background: #006564;
+        top: 50%;
+        left: 0px;
+        @include mediaSMLmin{
+            left: -30px;
+        }
+    }
+}
+
+.simulate_icon {
+    li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 40px;
+    }
+}
+
+.icon_image {
+    width: 8%;
+    @include mediaSMLmax{
+        width: 15%;
+    }
+}
+
+.icon_text {
+    width: 89%;
+    @include mediaSMLmax{
+        width: 80%;
+    }
+    li{
+        font-size: 14px;
+    }
+}
+
+.icon_detail{
+    font-size: 14px;
+    @include mediaSMLmax{
+        font-size: 13px;
+    }
+}
+
+
+.flow_tit {
+    span{
+        font-family: 'Montserrat', sans-serif,
+        'Noto Sans Japanese',
+        'Hiragino Kaku Gothic Pro',
+        'ヒラギノ丸ゴ Pro W4',
+        'Hiragino Maru Gothic Pro',
+        YuGothic,
+        '游ゴシック',
+        Noto Sans JP,
+        'メイリオ',
+        'Meiryo',
+        'Osaka',
+        'ＭＳ Ｐゴシック';
+        font-weight: bold;
+        margin: 0 30px 0 0;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 1px;
+            background: #000;
+            top: 49%;
+            left: 30px;
+        }
+    }
+}
+
+
+.guidance {
+    background: #F6F5F2;
+    padding: 10px;
+    border: solid 1px #AAAAAA;
+    margin: 60px 0;
+    @include mediaSMLmin{
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+}
+
+
+.guidance_text {
+    @include mediaSMLmin{
+        width: 50%;
+    }
+    li{
+        font-size: 14px;
+        padding: 0 0 0 50px;
+        margin: 20px 0;
+        position: relative;
+        @include mediaSMLmax{
+            font-size: 13px;
+            padding: 0 0 0 20px;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 1px;
+            background: #006564;
+            left: 20px;
+            top: 11px;
+            @include mediaSMLmax{
+                left: 5px;
+            }
+        }
+    }
+}
+.guidance_tit {
+    font-size: 20px;
+    @include mediaSMLmax{
+        font-size: 16px;
+    }
+}
+
+.guidance_image {
+    @include mediaSMLmin{
+        width: 40%;
+    }
+}
+
+
+
+.guidance_master {
+    background: linear-gradient(177deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+    padding: 40px;
+    color: #fff;
+    @include mediaSMLmax{
+        padding:20px;
+    }
+}
+
+.master_list {
+    ul{
+        margin:20px 0 ;
+    }
+    li {
+        display: flex;
+        align-items: center;
+        border-bottom: solid 1px;
+        border-color: rgba(255,255,255,0.5);
+        padding: 10px 0;
+        @include mediaSMLmax{
+            padding: 5px 0;
+        }
+    }
+}
+
+.master_tit {
+    font-size: 19px;
+}
+.master_num {
+    font-size: 44px;
+    font-weight: bold;
+    opacity: 0.5;
+    margin: 0 20px 0 0;
+    width: 5%;
+    @include mediaSMLmax{
+        font-size: 34px;
+    }
+}
+
+.master_text {
+    width: 90%;
+    font-size: 14px;
+    @include mediaSMLmax{
+        font-size: 13px;
+    }
+}
+
+
+.analyze {
+
+    border: solid 1px #AAAAAA;
+    padding: 30px;
+    margin: 40px 0;
+    @include mediaSMLmax{
+        padding: 20px;
+    }
+}
+
+.analyze_tit_wrap {
+
+    @include mediaSMLmin{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.analyze_tit_sub {
+    padding: 0 0 0 40px;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 1px;
+        background: #006564;
+        top: 48%;
+        left: 15px;
+    }
+    @include mediaSMLmax{
+        font-size: 12px;
+        padding: 0 0 0 5px;
+    }
+}
+
+.analyze_text {
+    margin: 20px 0 0;
+}
+
+
+ .sheat_wrap {
+     ul{
+         margin: 0 0 20px;
+     }
+     li{
+         font-size: 14px;
+         display: flex;
+         margin: 10px 0 10px;
+     }
+     span{
+         font-weight: bold;
+         color: #006564;
+         margin: 0 20px;
+         position: relative;
+         &::before{
+            position: absolute;
+            content: "";
+            width: 10px;
+            height: 1px;
+            background: #006564;
+            top: 12px;
+            left: -17px;
+         }
+     }
+ }
+
+
+
+ .sheat_image {
+     @include mediaSMLmax{
+     overflow: scroll;
+     img{
+        width: 680px;
+        }
+    }
+}

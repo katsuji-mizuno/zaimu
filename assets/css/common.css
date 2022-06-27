@@ -1,0 +1,779 @@
+@charset "UTF-8";
+/*-------------------------------------------*/
+/* COMMON(サイト基本設定)                      */
+/*-------------------------------------------*/
+/***********************共通設定************************/
+.header_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1240px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* 900以下  */
+  /* 901以上  */
+}
+@media all and (max-width: 900px) {
+  .header_wrap {
+    position: fixed;
+    background: #fff;
+    z-index: 999;
+    width: 100%;
+  }
+}
+@media all and (min-width: 901px) {
+  .header_wrap {
+    padding: 20px;
+  }
+}
+.header_wrap a {
+  color: #000;
+}
+
+.logo {
+  width: 270px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .logo {
+    width: 235px;
+    padding: 20px;
+  }
+}
+
+/*-------------------------------------------*/
+/*         PCのナビ                           */
+/*-------------------------------------------*/
+header {
+  /* 901以上  */
+  /* 900以下  */
+}
+@media all and (min-width: 901px) {
+  header {
+    width: 60%;
+  }
+}
+@media all and (max-width: 900px) {
+  header {
+    margin: 0 20px 0 0;
+  }
+}
+
+.nav_pc {
+  position: relative;
+  /* 900以下  */
+}
+.nav_pc ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.nav_pc li {
+  position: relative;
+}
+.nav_pc li a {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+  letter-spacing: 2px;
+  padding: 10px;
+  line-height: 1.5;
+  font-weight: 400;
+}
+.nav_pc li span {
+  display: block;
+  font-size: 10px;
+  font-weight: bold;
+  color: #7E7E7E;
+  line-height: 10px;
+}
+.nav_pc li:before, .nav_pc li:after {
+  position: absolute;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #006564;
+  content: "";
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  top: 45px;
+}
+.nav_pc li:before {
+  top: 5px;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+}
+.nav_pc li:after {
+  bottom: -10px;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.nav_pc li:hover:before, .nav_pc li:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.nav_pc li.accordion {
+  cursor: pointer;
+  padding: 10px;
+}
+.nav_pc li.accordion:before {
+  top: 7px;
+  -webkit-transform: translateY(10px);
+      -ms-transform: translateY(10px);
+          transform: translateY(10px);
+}
+.nav_pc li.accordion:after {
+  top: 47px;
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+.nav_pc li.accordion:hover:before, .nav_pc li.accordion:hover:after {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+      -ms-transform: translateY(0px);
+          transform: translateY(0px);
+}
+.nav_pc li.nav_contact {
+  background: #006564;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.nav_pc li.nav_contact a {
+  color: #fff;
+  padding: 10px 20px 10px 50px;
+  position: relative;
+}
+.nav_pc li.nav_contact a:before {
+  content: "";
+  position: absolute;
+  background-image: url(../images/icon_mail.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 14px;
+  left: 20px;
+  top: 50%;
+  margin-top: -7px;
+}
+.nav_pc li.nav_contact:before, .nav_pc li.nav_contact:after {
+  display: none;
+}
+.nav_pc li.nav_contact:hover {
+  background: #4EAE5E;
+}
+@media all and (max-width: 900px) {
+  .nav_pc {
+    display: none;
+  }
+}
+
+/*-------------------------------------------*/
+/*        サービスホバー時のアコーディオン         */
+/*-------------------------------------------*/
+.accordion {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  /* 900以下  */
+}
+.accordion .accordion_in {
+  position: absolute;
+  background: #006564;
+  height: 0px;
+  overflow: hidden;
+  top: 54px;
+  margin-left: calc(50% - 70vw);
+  width: 120vw;
+  font-size: 13px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.accordion .accordion_in a {
+  color: #fff;
+}
+.accordion .accordion_in ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.accordion .accordion_in li {
+  margin: 0 10px;
+}
+.accordion .accordion_in li:before {
+  display: none;
+}
+.accordion .accordion_in li:after {
+  background: #fff;
+  height: 1px;
+  top: 30px;
+}
+.accordion:hover .accordion_in {
+  height: 40px;
+  overflow: visible;
+  z-index: 1000;
+}
+@media all and (max-width: 900px) {
+  .accordion {
+    display: none;
+  }
+}
+
+/*-------------------------------------------*/
+/*         スマホのハンバーガー                 */
+/*-------------------------------------------*/
+.nav_sp {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .nav_sp {
+    display: none;
+  }
+}
+.nav_sp a {
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.burger_btn {
+  display: block;
+  width: 39px;
+  height: 39px;
+  position: relative;
+  z-index: 3;
+  border: none;
+  cursor: pointer;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .burger_btn {
+    display: none;
+  }
+}
+
+.bar {
+  width: 30px;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #006564;
+}
+
+.close .bar {
+  background-color: #fff;
+}
+
+.bar_top {
+  top: 14px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.bar_bottom {
+  bottom: 14px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.burger_btn.close .bar_top {
+  top: 18px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.burger_btn.close .bar_bottom {
+  bottom: 18px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.nav_sp {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.header_nav_sp {
+  width: 100%;
+  height: 100%;
+  background: -o-linear-gradient(273deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+  background: linear-gradient(177deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+  z-index: 2;
+}
+.header_nav_sp .nav_list {
+  display: block;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  text-align: center;
+  width: 100%;
+}
+.header_nav_sp .nav_list li {
+  text-align: left;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.header_nav_sp .nav_list li.service {
+  color: #fff;
+  margin: 20px 0 10px;
+}
+.header_nav_sp .nav_list li.service_sub {
+  font-size: 14px;
+  margin: 10px 0 10px 20px;
+}
+.header_nav_sp .nav_list li.service_sub::before {
+  content: "-";
+  color: #fff;
+  margin: 0 5px 0 0;
+}
+.header_nav_sp .nav_list span {
+  color: #04a2a1;
+  font-size: 10px;
+  margin: 0 0 0 10px;
+}
+
+/*-------------------------------------------*/
+/*         スマホのハンバーガー内                 */
+/*-------------------------------------------*/
+.logo_sp {
+  width: 235px;
+  padding: 20px;
+}
+
+/*----------------------------------------------------
+footer
+----------------------------------------------------*/
+#footer {
+  background: #006564;
+  text-align: left;
+}
+#footer a {
+  text-decoration: none;
+}
+
+.footer_nav_wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .footer_nav_wrap {
+    padding: 40px 20px;
+  }
+}
+
+.footer_nav {
+  color: #fff;
+  position: relative;
+  /* 901以上  */
+  /* 900以下  */
+}
+@media all and (min-width: 901px) {
+  .footer_nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer_nav ul {
+    width: 30%;
+  }
+}
+@media all and (max-width: 900px) {
+  .footer_nav ul {
+    margin: 40px 0;
+  }
+}
+.footer_nav li {
+  position: relative;
+  left: 0px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  margin: 0 0 30px;
+  font-size: 14px;
+  /* 900以下  */
+}
+.footer_nav li:hover {
+  left: 5px;
+}
+.footer_nav li span {
+  width: 40%;
+}
+.footer_nav li a {
+  color: #749D9D;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media all and (max-width: 900px) {
+  .footer_nav li {
+    font-size: 12px;
+    margin: 0 0 10px;
+  }
+}
+.footer_nav li.service {
+  margin: 40px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .footer_nav li.service {
+    margin: 0 0 10px;
+  }
+}
+.footer_nav li.service ul {
+  width: 150px;
+  margin: 0;
+}
+.footer_nav li.service li {
+  position: relative;
+  padding: 0 0 0 10px;
+  margin: 0 0 10px;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .footer_nav li.service li:last-child {
+    margin: 0 0 30px;
+  }
+}
+.footer_nav li.service li::before {
+  position: absolute;
+  content: "-";
+  color: #fff;
+  margin: 0 5px 0 0;
+  left: 0px;
+}
+.footer_nav .en {
+  width: 150px;
+  color: #7EC4C4;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .footer_nav .en {
+    width: 130px;
+  }
+}
+.footer_nav .jp {
+  color: #fff;
+}
+.footer_nav .jp a {
+  color: #fff;
+}
+
+.address {
+  font-family: sans-serif, "Noto Sans Japanese", "ＭＳ Ｐゴシック";
+  font-size: 10px;
+  color: #fff;
+  line-height: 1.4;
+  margin: 30px 0 0;
+  /* 901以上  */
+  /* 900以下  */
+}
+.address span a[href^="tel:"] {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+}
+@media all and (min-width: 901px) {
+  .address {
+    font-size: 14px;
+  }
+  .address span {
+    display: block;
+    font-size: 20px;
+  }
+}
+@media all and (max-width: 900px) {
+  .address {
+    display: none;
+  }
+}
+
+.address_sp {
+  font-family: sans-serif, "Noto Sans Japanese", "ＭＳ Ｐゴシック";
+  font-size: 10px;
+  color: #fff;
+  line-height: 1.4;
+  margin: 20px 0 40px;
+  /* 901以上  */
+}
+.address_sp span a[href^="tel:"] {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  pointer-events: none;
+}
+@media all and (min-width: 901px) {
+  .address_sp {
+    display: none;
+  }
+}
+
+.footer_logo {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .footer_logo {
+    width: 50%;
+  }
+}
+.footer_logo img {
+  width: 270px;
+}
+
+.sns {
+  width: 24px;
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  opacity: 1;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  /* 900以下  */
+}
+.sns:hover {
+  opacity: 0.7;
+}
+@media all and (max-width: 900px) {
+  .sns {
+    bottom: -60px;
+  }
+}
+
+.copy {
+  font-family: sans-serif, "Noto Sans Japanese", "ＭＳ Ｐゴシック";
+  color: #7EC4C4;
+  text-align: left;
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-style: normal;
+}
+
+body {
+  /* for iOS */
+  -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  /* for Chrome */
+  -webkit-backface-visibility: hidden;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Noto Sans Japanese", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", YuGothic, "游ゴシック", Noto Sans JP, "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック";
+  width: 100%;
+  color: #000;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 1.2px;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif, "Noto Sans Japanese", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", YuGothic, "游ゴシック", Noto Sans JP, "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック";
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+section {
+  display: block;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+a img {
+  border: none;
+}
+
+ul, li {
+  list-style: none;
+}
+
+input, label, select, textarea {
+  vertical-align: middle;
+}
+
+/* 750以下  */
+@media all and (max-width: 750px) {
+  html,
+body {
+    height: auto;
+    overflow-x: hidden;
+  }
+}
+/* 751以上 */
+@media all and (min-width: 751px) {
+  html,
+body {
+    height: 100%;
+  }
+
+  body {
+    min-height: 100%;
+    height: auto !important;
+  }
+}
+.nowrap {
+  white-space: nowrap;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+/*----------------------------------------------------
+loader
+----------------------------------------------------*/
+#loaderBg {
+  display: block;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: #006564;
+  z-index: 10000;
+}
+
+#loader,
+#loader:before,
+#loader:after {
+  background: #006564;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
+#loader {
+  color: #ffffff;
+  text-indent: -9999em;
+  position: absolute;
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+  top: 60%;
+  left: 50%;
+}
+
+#loader:before,
+#loader:after {
+  position: absolute;
+  top: 0;
+  content: "";
+}
+
+#loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+#loader:after {
+  left: 1.5em;
+}
+
+@-webkit-keyframes load1 {
+  0%, 80%, 100% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    -webkit-box-shadow: 0 -2em;
+            box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%, 80%, 100% {
+    -webkit-box-shadow: 0 0;
+            box-shadow: 0 0;
+    height: 4em;
+  }
+  40% {
+    -webkit-box-shadow: 0 -2em;
+            box-shadow: 0 -2em;
+    height: 5em;
+  }
+}
+.load_logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -150px;
+}

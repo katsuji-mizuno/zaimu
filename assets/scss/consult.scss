@@ -1,0 +1,233 @@
+@charset 'utf-8';
+@import 'mixin';
+
+
+
+
+
+.flow_column_wrap {
+    @include mediaSMLmin{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.flow_column {
+    @include mediaSMLmin{
+        width: 72%;
+    }
+}
+
+.flow_image {
+    @include mediaSMLmin{
+        width: 24%;
+    }
+    @include mediaSMLmax{
+        display: none;
+    }
+}
+
+
+.flow_example{
+    ul{
+        @include mediaSMLmin{
+            display: flex;
+            flex-flow: wrap;
+        }
+    }
+    li{
+        border-left: solid 1px #AAAAAA;
+        border-bottom: solid 1px #AAAAAA;
+        font-size: 13px;
+        margin: 0 0px 20px 0;
+        padding: 5px 0 5px 10px;
+        min-height: 10px;
+        @include mediaSMLmin{
+            width: 28%;
+            margin: 0 20px 20px 0;
+            padding: 5px 0 10px 20px;
+            min-height: 40px;
+            font-size: 14px;
+        }
+    }
+}
+
+
+.service_more {
+    background: linear-gradient( 177deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+    &:hover{
+    .info_more {
+        top: 3px;
+        left: 3px;
+        &::after{
+          top: 0px;
+          left: 0px;
+        }
+      }
+    }
+    a{
+        text-decoration:none ;
+    }
+    @include mediaSMLmax{
+        margin: 60px 0 0;
+    }
+}
+
+
+
+.service_more_inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    align-items: center;
+    @include mediaSMLmax{
+        padding: 40px 20px;
+    }
+}
+.service_more_text {
+    color: #fff;
+    text-decoration: none;
+    @include mediaSMLmax{
+        width: 80%;
+        text-align: left;
+        font-size: 14px;
+    }
+}
+
+.info_more {
+    background: #fff;
+    position: relative;
+    color: #006564;
+    width: 180px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: table;
+
+    @include mediaSMLmax{
+      width: 40px;
+    }
+    @include trans;
+    a{
+      display: table;
+    }
+    p{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    &::before{
+      @include mediaSMLmin{
+        display: none;
+      }
+      content: "";
+      position: absolute;
+      border-top: solid 1px #006564;
+      border-right: solid 1px #006564;
+      width: 10px;
+      height: 10px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 14px;
+      left: 11px
+    }
+    &::after{
+      content: "";
+      border: 1px solid #fff;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 180px;
+      height: 40px;
+      @include mediaSMLmax{
+        width: 40px;
+      }
+      @include trans;
+    }
+
+    @include mediaSMLmax{
+      p{
+        display: none;
+      }
+    }
+  }
+
+
+.flow_step {
+    ul{
+
+        @include mediaSMLmin{
+            display: flex;
+            flex-flow: wrap;
+            justify-content: space-between;
+        }
+    }
+    li{
+
+        justify-content: space-between;
+        display: flex;
+        align-items: center;
+        margin: 30px 0;
+        position: relative;
+
+        @include mediaSMLmin{
+            width: 45%;
+        }
+        &::after{
+            position: absolute;
+            content: "";
+            width: 80%;
+            height: 1px;
+            background: #006564;
+            right: 0;
+            bottom: -10px;
+        }
+    }
+}
+
+.step_icon {
+    width: 15%;
+}
+
+.step_text {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    span{
+        font-family: 'Montserrat', sans-serif,
+        'Noto Sans Japanese',
+        'Hiragino Kaku Gothic Pro',
+        'ヒラギノ丸ゴ Pro W4',
+        'Hiragino Maru Gothic Pro',
+        YuGothic,
+        '游ゴシック',
+        Noto Sans JP,
+        'メイリオ',
+        'Meiryo',
+        'Osaka',
+        'ＭＳ Ｐゴシック';
+        font-weight: bold;
+        padding: 0 40px 0 0;
+        position: relative;
+        &::after{
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 1px;
+            background: #000;
+            top: 48%;
+            left: 25px;
+        }
+    }
+    p{
+        font-size:14px;
+        @include mediaSMLmax{
+            font-size: 13px;
+        }
+    }
+
+}
+

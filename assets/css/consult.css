@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/***********************共通設定************************/
+
+.flow_price_tit.green {
+  color: #fff;
+  background: #01807D;
+}
+
+.flow_price_detail.green {
+  color: #fff;
+  background: #006564;
+}
+
+
+
+
+
+
+.flow_column_wrap {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_column_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.flow_column {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_column {
+    width: 72%;
+  }
+}
+
+.flow_image {
+  /* 901以上  */
+  /* 900以下  */
+}
+@media all and (min-width: 901px) {
+  .flow_image {
+    width: 24%;
+  }
+}
+@media all and (max-width: 900px) {
+  .flow_image {
+    display: none;
+  }
+}
+
+.flow_example ul {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_example ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+}
+.flow_example li {
+  border-left: solid 1px #AAAAAA;
+  border-bottom: solid 1px #AAAAAA;
+  font-size: 13px;
+  margin: 0 0px 20px 0;
+  padding: 5px 0 5px 10px;
+  min-height: 10px;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_example li {
+    width: 28%;
+    margin: 0 20px 20px 0;
+    padding: 5px 0 10px 20px;
+    min-height: 40px;
+    font-size: 14px;
+  }
+}
+
+.service_more {
+  background: -o-linear-gradient(273deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+  background: linear-gradient(177deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+  /* 900以下  */
+}
+.service_more:hover .info_more {
+  top: 3px;
+  left: 3px;
+}
+.service_more:hover .info_more::after {
+  top: 0px;
+  left: 0px;
+}
+.service_more a {
+  text-decoration: none;
+}
+@media all and (max-width: 900px) {
+  .service_more {
+    margin: 60px 0 0;
+  }
+}
+
+.service_more_inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .service_more_inner {
+    padding: 40px 20px;
+  }
+}
+
+.service_more_text {
+  color: #fff;
+  text-decoration: none;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .service_more_text {
+    width: 80%;
+    text-align: left;
+    font-size: 14px;
+  }
+}
+
+.info_more {
+  background: #fff;
+  position: relative;
+  color: #006564;
+  width: 180px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  display: table;
+  /* 900以下  */
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .info_more {
+    width: 40px;
+  }
+}
+.info_more a {
+  display: table;
+}
+.info_more p {
+  display: table-cell;
+  vertical-align: middle;
+}
+.info_more::before {
+  /* 901以上  */
+  content: "";
+  position: absolute;
+  border-top: solid 1px #006564;
+  border-right: solid 1px #006564;
+  width: 10px;
+  height: 10px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 14px;
+  left: 11px;
+}
+@media all and (min-width: 901px) {
+  .info_more::before {
+    display: none;
+  }
+}
+.info_more::after {
+  content: "";
+  border: 1px solid #fff;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 180px;
+  height: 40px;
+  /* 900以下  */
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+@media all and (max-width: 900px) {
+  .info_more::after {
+    width: 40px;
+  }
+}
+@media all and (max-width: 900px) {
+  .info_more p {
+    display: none;
+  }
+}
+
+.flow_step ul {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_step ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.flow_step li {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0;
+  position: relative;
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  .flow_step li {
+    width: 45%;
+  }
+}
+.flow_step li::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  background: #006564;
+  right: 0;
+  bottom: -10px;
+}
+
+.step_icon {
+  width: 15%;
+}
+
+.step_text {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.step_text span {
+  font-family: "Montserrat", sans-serif, "Noto Sans Japanese", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", YuGothic, "游ゴシック", Noto Sans JP, "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック";
+  font-weight: bold;
+  padding: 0 40px 0 0;
+  position: relative;
+}
+.step_text span::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 1px;
+  background: #000;
+  top: 48%;
+  left: 25px;
+}
+.step_text p {
+  font-size: 14px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .step_text p {
+    font-size: 13px;
+  }
+}
+/*# sourceMappingURL=consult.css.map */

@@ -1,0 +1,167 @@
+@charset 'utf-8';
+@import 'mixin';
+
+br.only_sp{
+  @include mediaSMLmin{
+    display: none;
+  }
+}
+.com_catch {
+  display: table;
+  width: 100%;
+  &_text{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    position: relative;
+    background: linear-gradient(177deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+    padding: 20px 30px;
+    @include mediaSMLmax{
+      padding: 10px 15px;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      background-image: url(../images/company/bg_vision.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 700px;
+      height: 95px;
+      bottom: 0;
+      right: 20px;
+      opacity: 0.2;
+      @include mediaSMLmax{
+        background-size: contain;
+        width: 100%;
+        height: 46px;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+  p{
+    display: inline-block;
+    color: #FFFFFF;
+    font-size: 24px;
+    letter-spacing: 0.25em;
+    @include mediaSMLmax{
+        font-size: 17px;
+    }
+  }
+}
+
+.com_catch_sub {
+    margin: 40px 0 0;
+    text-align: left;
+    @include mediaSMLmax{
+        font-size: 13px;
+    }
+    p{
+        margin: 0 0 10px;
+    }
+}
+
+
+.com_mv {
+    margin: 60px 0 ;
+    @include mediaSMLmax{
+        margin: 30px 0 ;
+    }
+}
+
+
+.com_about {
+    font-size: 14px;
+    position: relative;
+    @include mediaSMLmax{
+        font-size: 13px;
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../images/company/bg_aboutus.png);
+        background-size: cover;
+        width: 100px;
+        height: 502px;
+        top: 0px;
+        z-index: -1;
+        right: -20px;
+        @include mediaSMLmax{
+            width: 70px;
+            height: 372px;
+            right: -10px;
+        }
+    }
+    li {
+        display: flex;
+        padding: 30px 0;
+        border-top: 1px solid #F0EFEA;
+        &:last-child{
+            border-bottom: 1px solid #F0EFEA ;
+        }
+        @include mediaSMLmax{
+            padding: 15px 0;
+            justify-content: space-between;
+        }
+    }
+}
+
+.about_tit {
+    width: 20%;
+    text-align: left;
+}
+
+.about_item {
+    @include mediaSMLmax{
+        width: 75%;
+        text-align: left;
+    }
+    li{
+        border-top: none;
+        padding: 0 0 10px;
+        &:last-child{
+            border-bottom: none;
+            padding: 0 ;
+        }
+    }
+}
+
+
+
+.com_access {
+    text-align: left;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url(../images/company/bg_access.png);
+        background-size: cover;
+        width: 410px;
+        height: 106px;
+        top: -12px;
+        z-index: -1;
+        left: 0;
+        @include mediaSMLmax{
+            width: 320px;
+            height: 76px;
+            top: -10px;
+        }
+    }
+}
+
+
+.com_access_text {
+    margin: 100px 0 60px;
+    @include mediaSMLmax{
+        font-size: 13px;
+        margin: 60px 0 20px;
+    }
+    span a[href^="tel:"]{
+        text-decoration: none;
+        pointer-events: none;
+        color: #000;
+    }
+}

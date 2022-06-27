@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/***********************共通設定************************/
+br.only_sp {
+  /* 901以上  */
+}
+@media all and (min-width: 901px) {
+  br.only_sp {
+    display: none;
+  }
+}
+
+.com_catch {
+  display: table;
+  width: 100%;
+}
+.com_catch_text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+  position: relative;
+  background: -o-linear-gradient(273deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+  background: linear-gradient(177deg, #4EAE5E 1%, #29984E 12%, #047574 33%, #006564 70%);
+  padding: 20px 30px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .com_catch_text {
+    padding: 10px 15px;
+  }
+}
+.com_catch_text::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/company/bg_vision.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 700px;
+  height: 95px;
+  bottom: 0;
+  right: 20px;
+  opacity: 0.2;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .com_catch_text::after {
+    background-size: contain;
+    width: 100%;
+    height: 46px;
+    bottom: -10px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+.com_catch p {
+  display: inline-block;
+  color: #FFFFFF;
+  font-size: 24px;
+  letter-spacing: 0.25em;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .com_catch p {
+    font-size: 17px;
+  }
+}
+
+.com_catch_sub {
+  margin: 40px 0 0;
+  text-align: left;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .com_catch_sub {
+    font-size: 13px;
+  }
+}
+.com_catch_sub p {
+  margin: 0 0 10px;
+}
+
+.com_mv {
+  margin: 60px 0;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .com_mv {
+    margin: 30px 0;
+  }
+}
+
+.com_about {
+  font-size: 14px;
+  position: relative;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .com_about {
+    font-size: 13px;
+  }
+}
+.com_about::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/company/bg_aboutus.png);
+  background-size: cover;
+  width: 100px;
+  height: 502px;
+  top: 0px;
+  z-index: -1;
+  right: -20px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .com_about::after {
+    width: 70px;
+    height: 372px;
+    right: -10px;
+  }
+}
+.com_about li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 30px 0;
+  border-top: 1px solid #F0EFEA;
+  /* 900以下  */
+}
+.com_about li:last-child {
+  border-bottom: 1px solid #F0EFEA;
+}
+@media all and (max-width: 900px) {
+  .com_about li {
+    padding: 15px 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+.about_tit {
+  width: 20%;
+  text-align: left;
+}
+
+.about_item {
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .about_item {
+    width: 75%;
+    text-align: left;
+  }
+}
+.about_item li {
+  border-top: none;
+  padding: 0 0 10px;
+}
+.about_item li:last-child {
+  border-bottom: none;
+  padding: 0;
+}
+
+.com_access {
+  text-align: left;
+  position: relative;
+}
+.com_access::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/company/bg_access.png);
+  background-size: cover;
+  width: 410px;
+  height: 106px;
+  top: -12px;
+  z-index: -1;
+  left: 0;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .com_access::after {
+    width: 320px;
+    height: 76px;
+    top: -10px;
+  }
+}
+
+.com_access_text {
+  margin: 100px 0 60px;
+  /* 900以下  */
+}
+@media all and (max-width: 900px) {
+  .com_access_text {
+    font-size: 13px;
+    margin: 60px 0 20px;
+  }
+}
+.com_access_text span a[href^="tel:"] {
+  text-decoration: none;
+  pointer-events: none;
+  color: #000;
+}

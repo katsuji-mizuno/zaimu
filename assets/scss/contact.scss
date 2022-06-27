@@ -1,0 +1,637 @@
+@charset 'utf-8';
+@import 'mixin';
+
+.content{
+  font-size: 14px;
+  @include mediaSP{
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+}
+
+.contact_message {
+  text-align: left;
+  margin: 0 0 60px;
+  font-size: 16px;
+  @include mediaSP{
+    margin: 0 0 30px;
+    font-size: 14px;
+  }
+  span{
+    display: block;
+    color: #006564;
+    font-size: 14px;
+    margin: 5px 0 0;
+    @include mediaSP{
+      font-size: 13px;
+    }
+  }
+}
+
+.form_item {
+  margin: 0 0 30px;
+  @include mediaPC{
+    display: flex;
+    justify-content: flex-start;
+  }
+  &.center{
+    align-items: center;
+  }
+  &.address_tit{
+    align-items: top;
+    .form_tit {
+      margin: 30px 0 0;
+    }
+  }
+}
+
+.form_tit {
+  @include mediaPC{
+    width: 20%;
+  }
+  text-align: left;
+  @include mediaSP{
+    margin: 0 0 15px;
+  }
+}
+
+
+.form_a,.form_b,.form_d {
+  @include mediaPC{
+    width: 80%;
+  }
+  input{
+    border: none;
+    background: none;
+    width: -webkit-fill-available;
+    padding: 30px;
+    @include mediaSP{
+      padding: 20px;
+    }
+  }
+}
+
+.form_c {
+  @include mediaPC{
+    width: 60%;
+  }
+  input{
+    border: none;
+    background: none;
+    width: -webkit-fill-available;
+    padding: 30px;
+    @include mediaSP{
+      padding: 20px;
+    }
+  }
+}
+
+.form_e {
+  @include mediaPC{
+    width: 60%;
+  }
+  input{
+    border: none;
+    background: none;
+    width: -webkit-fill-available;
+    padding: 30px;
+    @include mediaSP{
+      padding: 20px;
+    }
+  }
+}
+
+.form_f {
+  @include mediaPC{
+    width: 70%;
+  }
+  input{
+    border: none;
+    background: none;
+    width: -webkit-fill-available;
+    padding: 30px;
+    @include mediaSP{
+      padding: 20px;
+    }
+  }
+}
+
+.form_g {
+  @include mediaPC{
+    width: 60%;
+  }
+  input{
+    border: none;
+    background: none;
+    width: -webkit-fill-available;
+    padding: 30px;
+    @include mediaSP{
+      padding: 20px;
+    }
+  }
+}
+
+.form_h {
+  @include mediaPC{
+    width: 80%;
+  }
+  input{
+    border: none;
+    background: none;
+    width: -webkit-fill-available;
+    padding: 30px;
+    @include mediaSP{
+      padding: 20px;
+    }
+  }
+}
+
+
+.form_a, .form_b {
+
+  span{
+    text-align: left;
+    margin: 0 0 20px;
+    @include mediaSP{
+      margin: 0 0 10px;
+    }
+}
+}
+
+.form_a {
+    display: flex;
+    flex-flow: wrap;
+    .mwform-radio-field-text {
+        width: 100%;
+        margin: 0 60px 0 0px;
+        @include mediaSP{
+          margin: 0 10px 0 0px;
+        }
+    }
+}
+
+.form_b {
+    display: flex;
+    justify-content: left;
+    @include mediaSP{
+      flex-flow: wrap;
+    }
+
+    .mwform-radio-field-text {
+        width: 100%;
+        margin: 0 60px 0 0px;
+    }
+}
+
+.form_c,.form_h,.form_d_1l,.form_d_1r,.form_d_2,.form_e_l,.form_e_r,.form_f_1,.form_g,.form_f_2,.form_f_3 {
+  input{
+    background: #E8E7E1;
+  }
+}
+
+.form_d_1 {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px;
+    @include mediaSP{
+      justify-content: left;
+    }
+}
+.form_d_1l {
+    width: 48%;
+    margin: 0 auto 0 0;
+}
+
+.form_d_1r {
+    width: 48%;
+    position: relative;
+
+    &::before{
+        content: "";
+        position: absolute;
+        width: 5px;
+        height: 1px;
+        top: 50%;
+        background: #000;
+        left: -18px;
+        @include mediaSP{
+          left: -9px;
+        }
+    }
+}
+
+
+
+.form_e {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 10px;
+    @include mediaSP{
+      justify-content: left;
+    }
+}
+
+.form_e_l {
+    width: 48%;
+    margin: 0 auto 0 0;
+    @include mediaSP{
+      margin: 0 5px 0 0;
+    }
+}
+
+.form_e_r {
+    width: 48%;
+}
+
+
+
+.form_f {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px;
+  @include mediaSP{
+    justify-content: left;
+  }
+}
+
+.form_f_1 {
+  width: 30%;
+}
+
+.form_f_2,.form_f_3 {
+  width: 31%;
+  margin: 0 0 0 auto;
+  position: relative;
+  &::before{
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 1px;
+    top: 50%;
+    background: #000;
+    left: -18px;
+    @include mediaSP{
+      left: -9px;
+    }
+  }
+}
+
+
+
+.form_privacy {
+  margin: 60px 0 20px;
+  a{
+    color: #FFFFFF;
+    background: #000000;
+    padding: 10px 20px;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    text-indent: 20px;
+    margin-top: 20px;
+    @include trans;
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url(../images/contact/icon_privacy.png);
+      width: 16px;
+      height: 12px;
+      background-size: contain;
+      top: 50%;
+      left: 20px;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+    }
+    @include mediaPC{
+      &:hover{
+        background: #AAAAAA;
+      }
+    }
+  }
+}
+
+
+.form_confirm {
+  margin: 80px auto 0;
+  @include mediaSP{
+    margin: 30px auto 0;
+  }
+  position: relative;
+  display: block;
+  width: 264px;
+  top: 0;
+  left: 0;
+  @include trans;
+  input{
+    border: none;
+    background: #006564;
+    color: #fff;
+    height: 56px;
+    width: 264px;
+    cursor: pointer;
+
+  }
+  input[type="submit"] {
+    -webkit-appearance: none;
+    border-radius: 0;
+    }
+
+  &::after{
+    content: "";
+    border: 1px solid #006564;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 264px;
+    height: 56px;
+    pointer-events: none;
+    @include trans;
+
+  }
+  &:hover{
+    top: 3px;
+    left: 3px;
+    &::after{
+      top: 0px;
+      left: 0px;
+    }
+}
+}
+
+/*-------------------------------------------*/
+/*         MwwpFORM の打ち消し                */
+/*-------------------------------------------*/
+
+.mw_wp_form .horizontal-item + .horizontal-item {
+    margin-left: 0px;
+}
+
+.mw_wp_form .error {
+  text-align: left;
+}
+
+.checkbox .error {
+  text-align: center;
+}
+
+/*-------------------------------------------*/
+/*         placeholder の色変更                */
+/*-------------------------------------------*/
+
+input{
+    &::placeholder {
+        color: #766D60;
+        font-size: 14px;
+    }
+    &:-ms-input-placeholder { /* IE用 */
+        color: #766D60;
+        font-size: 14px;
+    }
+}
+
+
+
+/*-------------------------------------------*/
+/*         ラジオボタンのカスタム                */
+/*-------------------------------------------*/
+
+/* ラジオボタンを隠す */
+.radio-btns input[type=radio].radio-btns__item{
+    display: none;
+  }
+
+  .radio-btns label {
+    display: inline-block;
+    cursor: pointer;
+
+  }
+
+  /* spanの左側にボタンを配置するスペースを作る */
+  .radio-btns .radio-btns__item + span {
+    padding-left: 40px;
+    display: inline-block;
+    position: relative;
+    @include mediaSP{
+      padding-left: 25px;
+    }
+  }
+
+  /* 各パーツを作成 */
+  .radio-btns .radio-btns__item + span::after,
+  .radio-btns .radio-btns__item + span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0px;
+    background: #E8E7E1;
+    @include mediaSP{
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  /* after上書き */
+  .radio-btns .radio-btns__item + span::after {
+    opacity: 0;
+    width: 11px;
+    height: 11px;
+    top: 7px;
+    left: 7px;
+    border: none;
+    background: #766D60;
+    border-radius: 50%;
+    @include trans;
+    @include mediaSP{
+      width: 8px;
+      height: 8px;
+      top: 6px;
+      left: 6px;
+    }
+  }
+
+  /*
+    checked状態
+    文字のcolorとボタンのopacityを変更
+  */
+  .radio-btns .radio-btns__item:checked + span {
+    color: #766D60;
+    @include trans;
+
+  }
+
+  .radio-btns .radio-btns__item:checked + span::after {
+    opacity: 1;
+  }
+
+
+
+
+
+
+/*-------------------------------------------*/
+/*         チェックボックスのカスタム            */
+/*-------------------------------------------*/
+.checkbox input[type=checkbox].checkbox__item{
+    display: none;
+  }
+
+  .checkbox label {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* spanの左側にボタンを配置するスペースを作る */
+  .checkbox .checkbox__item + span {
+    padding-left: 2em;
+    display: inline-block;
+    position: relative;
+  }
+
+  /* 各パーツを作成 */
+  .checkbox .checkbox__item + span::after,
+  .checkbox .checkbox__item + span::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 0;
+    left: 0;
+    background: #E8E7E1;
+  }
+
+  /* after上書き */
+  .checkbox .checkbox__item + span::after {
+    opacity: 0;
+    width: 6px;
+    height: 12px;
+    transform: rotate(45deg);
+    left: 7px;
+    border: none;
+    border-right: 5px solid #766D60;
+    border-bottom: 5px solid #766D60;
+    @include trans;
+  }
+
+  /*
+    checked状態
+    文字のcolorとボタンのopacityを変更
+  */
+  .checkbox .checkbox__item:checked + span {
+    color: #766D60;
+    @include trans;
+
+  }
+
+  .checkbox .checkbox__item:checked + span::after {
+    opacity: 1;
+  }
+
+
+
+
+
+
+/*-------------------------------------------*/
+/*         確認画面                           */
+/*-------------------------------------------*/
+
+#contact_check{
+  .contact_message {
+    font-size: 16px;
+    color: #006564;
+  }
+
+  .form_item {
+    justify-content: left;
+    &.address_tit{
+      .form_tit {
+       margin: 0;
+      }
+    }
+  }
+  .form_a,
+  .form_b,
+  .form_c,
+  .form_d,  .form_d_1l,  .form_d_1r,  .form_d_2,
+  .form_e,  .form_e_l,  .form_e_r,
+  .form_f,  .form_f_1,  .form_f_2,  .form_f_3,
+  .form_g
+  {
+    width: auto;
+    background: none;
+    text-align: left;
+  }
+  .form_privacy,.checkbox {
+    display: none;
+  }
+  .form_f_2, .form_f_3 {
+    margin: 0 0 0 20px;
+    &::before{
+        top: 45%;
+        left: -13px;
+    }
+  }
+  .form_d_1l {
+    margin: 0 -44px 0 0;
+    @include mediaSP{
+      margin: 0 10px 0 0;
+    }
+  }
+  .form_confirm_wrap{
+    margin: 0 auto;
+    @include mediaPC{
+      display: flex;
+      width: 640px;
+
+    }
+  }
+  .form_confirm_back {
+    margin: 80px auto 0;
+    position: relative;
+    display: block;
+    width: 264px;
+    top: 0;
+    left: 0;
+    @include trans;
+    button{
+      border: none;
+      background: #7E7E7E;
+      color: #fff;
+      height: 56px;
+      width: 264px;
+      cursor: pointer;
+    }
+    &::after{
+      content: "";
+      border: 1px solid #7E7E7E;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 264px;
+      height: 56px;
+      pointer-events: none;
+      @include trans;
+    }
+    &:hover{
+      top: 3px;
+      left: 3px;
+      &::after{
+        top: 0px;
+        left: 0px;
+      }
+    }
+  }
+}
+#contact_thanks {
+  .content{
+    font-size: 16px;
+    height: 300px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+  }
+}

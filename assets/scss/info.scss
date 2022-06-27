@@ -1,0 +1,341 @@
+@charset 'utf-8';
+@import 'mixin';
+
+.news_wrap {
+
+    text-align: left;
+    @include mediaSMLmin {
+        margin: 100px 0;
+
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.news_cate {
+    @include mediaSMLmax{
+        ul{
+            display: flex;
+        }
+        li{
+            width: 30%;
+        }
+    }
+    @include mediaSMLmin{
+        width: 20%;
+    }
+    li{
+        padding: 0 0 0 10px;
+        position: relative;
+        margin: 0 0 30px;
+        @include mediaSMLmax {
+            padding: 0 0 0 10px;
+            position: relative;
+            font-size: 13px;
+            margin: 0 0px 20px 10px;
+        }
+        &::before{
+            content: "";
+            width: 10px;
+            height: 1px;
+            background:#000;
+            position: absolute;
+            top: 48%;
+            left: -11px;
+            @include trans;
+        }
+        &:hover{
+            &::before{
+                left: -5px;
+            }
+        }
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+    }
+}
+
+ul.news_ul {
+    width: 100%;
+    li{
+        &.news_list {
+            margin: 40px 0 0;
+            @include mediaSMLmin{
+                margin: 0 0 60px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        @include mediaSMLmax{
+            &:first-child {
+                margin: 0;
+            }
+        }
+    }
+}
+
+
+
+.date{
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 1;
+    width: 27%;
+    text-align: center;
+    @include mediaSMLmax{
+        width: 45px;
+    }
+    span{
+        display: block;
+        font-size: 32px;
+    }
+}
+
+.date_cate_wrap {
+    display: flex;
+
+    @include mediaSMLmin{
+    width: 20%;
+    align-items: center;
+        .title {
+            text-align: left;
+            width: 80%;
+        }
+    }
+    @include mediaSMLmax{
+        width: 80%;
+        font-size: 13px;
+        align-items: center;
+    }
+}
+
+.title {
+    @include mediaSMLmin{
+        width: 80%;
+        display: flex;
+        align-items: center;
+    }
+    @include mediaSMLmax{
+        margin: 10px 0 0;
+    }
+}
+
+.tit_cate {
+    width: 90%;
+}
+
+.cate{
+    a{
+        color: #7E7E7E;
+        position: relative;
+        text-decoration: none;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 1px;
+            background: #7E7E7E;
+            top:49%;
+            left: -20px;
+            @include trans;
+        }
+    }
+    &:hover{
+        a{
+            &::before{
+                left: -15px;
+            }
+        }
+    }
+}
+
+.title {
+    a{
+        color: #000;
+        font-family:  "Noto Sans Japanese", "Hiragino Kaku Gothic Pro", "ヒラギノ丸ゴ Pro W4", "Hiragino Maru Gothic Pro", YuGothic, "游ゴシック", Noto Sans JP, "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック";
+        position: relative;
+        left: 0;
+        display: block;
+        text-decoration: none;
+        @include trans;
+    }
+    &:hover{
+        a{
+            left: 10px;
+        }
+    }
+}
+
+.news_list_pager {
+    a,span{
+        margin: 0 20px 0 0;
+        font-weight: bold;
+        padding: 15px 20px;
+        @include mediaSMLmax{
+            margin: 0 10px 0 0;
+        }
+    }
+    a{
+        color: #766D60;
+        text-decoration: none;
+        @include trans;
+        &:hover{
+            background: #006564;
+            color: #fff;
+
+        }
+    }
+    span{
+        color: #006564;
+    }
+}
+
+
+/*----------------------------------------------------
+単一記事以外
+----------------------------------------------------*/
+
+
+#infolist{
+    .cate {
+        margin: 0 30px;
+        @include mediaSMLmin{
+            margin: 0 20px 0 40px;
+        }
+    }
+}
+
+/*----------------------------------------------------
+単一記事
+----------------------------------------------------*/
+
+
+.top_info_more {
+
+    background: #fff;
+    position: relative;
+    color: #006564;
+    width: 180px;
+    height: 40px;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: table-cell;
+    vertical-align: middle;
+    border: solid 1px #006564;
+    text-align: center;
+    @include mediaSMLmax{
+      width: 40px;
+    }
+    @include trans;
+    a{
+      display: table;
+      text-decoration: none;
+    }
+    p{
+        text-decoration: none;
+    }
+    &::before{
+      @include mediaSMLmin{
+        display: none;
+      }
+      content: "";
+      position: absolute;
+      border-top: solid 1px #006564;
+      border-right: solid 1px #006564;
+      width: 10px;
+      height: 10px;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 14px;
+      left: 11px
+    }
+    &::after{
+      content: "";
+      border: 1px solid #fff;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+      width: 180px;
+      height: 40px;
+      @include mediaSMLmax{
+        width: 40px;
+      }
+      @include trans;
+      background: #006564;
+      text-align: center;
+      z-index: -1;
+
+    }
+    &:hover{
+      top: 3px;
+      left: 3px;
+      &::after{
+        top: 0px;
+        left: 0px;
+      }
+    }
+    @include mediaSMLmax{
+      p{
+        display: none;
+      }
+    }
+  }
+
+  .info_more {
+    text-align: right;
+    margin: 100px 0 0;
+    @include mediaSMLmax{
+        margin: 40px 0 0;
+    }
+  }
+
+
+#single {
+    .tit_cate {
+        @include mediaSMLmax{
+            width: 80%;
+            display: flex;
+            flex-flow: wrap-reverse;
+        }
+    }
+    .news_content_wrap {
+        @include mediaSMLmin{
+            width: 80%;
+        }
+    }
+    .title{
+        font-size: 24px;
+        line-height: 1.4;
+        @include mediaSMLmax{
+            margin: 20px 0 0;
+        }
+    }
+    .cate{
+        font-size: 14px;
+        color: #7E7E7E;
+        position: relative;
+        width: 60%;
+        left: 20px;
+        @include mediaSMLmax{
+            margin: 0;
+            left: 30px;
+        }
+    }
+    .news_list {
+        margin: 0 0 40px;
+        @include mediaSMLmax{
+            margin: 0 0 20px;
+        }
+    }
+
+    .blog_text {
+        @include mediaSMLmax{
+            font-size: 13px;
+        }
+    }
+}
+
