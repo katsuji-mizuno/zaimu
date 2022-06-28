@@ -173,8 +173,11 @@
 }
 
 .flow_price_tit {
-  background: #E8E7E1;
   /* 901以上  */
+}
+.flow_price_tit.green {
+  color: #fff;
+  background: #01807D;
 }
 @media all and (min-width: 901px) {
   .flow_price_tit {
@@ -183,8 +186,11 @@
 }
 
 .flow_price_detail {
-  background: #F6F5F2;
   /* 901以上  */
+}
+.flow_price_detail.green {
+  color: #fff;
+  background: #006564;
 }
 @media all and (min-width: 901px) {
   .flow_price_detail {
@@ -233,3 +239,4 @@
   text-indent: 1em;
   display: inline-block;
 }
+/*# sourceMappingURL=service.css.map */

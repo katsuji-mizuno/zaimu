@@ -186,6 +186,7 @@
 }
 
 .form_h {
+  text-align: left;
   /* 751以上 */
 }
 @media all and (min-width: 751px) {
@@ -762,6 +763,7 @@ input:-ms-input-placeholder {
   font-size: 16px;
   height: 300px;
   vertical-align: middle;
-  display: table-cell;
   text-align: center;
+  padding: 140px 0 0;
 }
+/*# sourceMappingURL=contact.css.map */

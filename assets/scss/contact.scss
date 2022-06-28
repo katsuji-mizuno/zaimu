@@ -132,6 +132,7 @@
 }
 
 .form_h {
+  text-align: left;
   @include mediaPC{
     width: 80%;
   }
@@ -631,7 +632,7 @@ input{
     font-size: 16px;
     height: 300px;
     vertical-align: middle;
-    display: table-cell;
     text-align: center;
+    padding: 140px 0 0;
   }
 }

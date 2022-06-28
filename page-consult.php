@@ -27,7 +27,7 @@
     <div class="service_flow">
       <div class="flow_tit">会社の経営実態のステージ確認等の経営相談の場合</div>
       <div class="flow_text">決算書の開示をして頂き、後日、財務状況の分析報告＆打ち合わせをさせて頂きます。</div>
-      <img src="<?php bloginfo('template_directory'); ?>/assets/images/consult/flow_pc.png" alt="" class="change">
+      <img src="<?php bloginfo('template_directory'); ?>/assets/images/consult/flow_pc.png" alt="会社の経営実態のステージ確認等の経営相談の場合" class="change">
     </div>
 
     <div class="service_flow">
@@ -52,7 +52,7 @@
           </div>
         </div>
         <div class="flow_image">
-          <img src="<?php bloginfo('template_directory'); ?>/assets/images/consult/flow_photo_pc.jpg" alt="" class="change">
+          <img src="<?php bloginfo('template_directory'); ?>/assets/images/consult/flow_photo_pc.jpg" alt="会社立て直し・事業存続で悩んでいる経営相談の場合">
         </div>
       </div>
     </div>
@@ -157,8 +157,8 @@
           </ul>
         </div>
       </div> -->
-    
-      
+
+
       <div class="flow_price">
         <div class="flow_price_tit green">顧問契約料金</div>
         <div class="flow_price_detail green">年間基本額<span>６６０,０００</span>円　税込</div>
@@ -169,7 +169,7 @@
           </ul>
         </div>
       </div>
-    
+
 
 
 

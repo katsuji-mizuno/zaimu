@@ -1,21 +1,5 @@
 @charset "UTF-8";
 /***********************共通設定************************/
-
-.flow_price_tit.green {
-  color: #fff;
-  background: #01807D;
-}
-
-.flow_price_detail.green {
-  color: #fff;
-  background: #006564;
-}
-
-
-
-
-
-
 .flow_column_wrap {
   /* 901以上  */
 }
@@ -50,7 +34,7 @@
 }
 @media all and (max-width: 900px) {
   .flow_image {
-    display: none;
+    width: 100%;
   }
 }
 
